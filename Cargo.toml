@@ -23,5 +23,5 @@ ureq = "3"
 
 [dev-dependencies]
 assert_cmd = "2"
-httpmock = "0.7"
+httpmock = "0.8"
 predicates = "3"
