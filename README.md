@@ -43,4 +43,27 @@ cargo trustpub remove --publisher github --id 42
 cargo trustpub set --trustpub-only true
 ```
 
+### Example: set up Trusted Publishing for a crate
+
+Authorize the GitHub Actions workflow that publishes the crate, then require all
+new versions to go through Trusted Publishing:
+
+```sh
+cargo trustpub add --publisher github --owner yihau --repo cargo-trustpub --pipeline release.yml --env Release
+cargo trustpub set --trustpub-only true
+```
+
+Check the result with `status`:
+
+```sh
+cargo trustpub status
+```
+
+```text
+crate: cargo-trustpub
+trustpub_only: enabled
+configs:
+  10918: github yihau/cargo-trustpub workflow=release.yml environment=Release
+```
+
 [Trusted Publishing]: https://crates.io/docs/trusted-publishing
