@@ -1,0 +1,27 @@
+[package]
+name = "cargo-trustpub"
+version = "0.0.0"
+edition = "2024"
+description = "A cargo subcommand to manage Trusted Publishing configuration for a crate on a registry"
+license = "MIT OR Apache-2.0"
+
+[lib]
+name = "cargo_trustpub"
+path = "src/lib.rs"
+
+[[bin]]
+name = "cargo-trustpub"
+path = "src/main.rs"
+
+[dependencies]
+anyhow = "1"
+clap = { version = "4", features = ["derive"] }
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+toml = "1"
+ureq = "3"
+
+[dev-dependencies]
+assert_cmd = "2"
+httpmock = "0.7"
+predicates = "3"
