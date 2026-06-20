@@ -1,0 +1,20 @@
+version: 2
+updates:
+  - package-ecosystem: cargo
+    directories:
+      - "/"
+    schedule:
+      interval: daily
+      time: "08:00"
+      timezone: Etc/UTC
+    cooldown:
+      default-days: 7
+
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: daily
+      time: "08:00"
+      timezone: Etc/UTC
+    cooldown:
+      default-days: 7
