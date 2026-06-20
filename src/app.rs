@@ -30,6 +30,7 @@ enum Publisher {
 #[command(name = "cargo-trustpub", bin_name = "cargo")]
 enum Cargo {
     /// Manage Trusted Publishing configuration for a crate on the registry
+    #[command(version, display_name = "cargo-trustpub")]
     Trustpub(TrustpubArgs),
 }
 
