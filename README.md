@@ -1,6 +1,6 @@
 # cargo-trustpub
 
-[![crates.io](https://img.shields.io/crates/v/cargo-trustpub.svg)](https://crates.io/crates/cargo-trustpub)
+[![crates.io](https://img.shields.io/crates/v/cargo-trustpub.svg?cacheSeconds=3600)](https://crates.io/crates/cargo-trustpub)
 
 Manage [Trusted Publishing] configuration for a crate on a registry (crates.io by
 default).
