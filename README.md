@@ -5,6 +5,8 @@
 Manage [Trusted Publishing] configuration for a crate on a registry (crates.io by
 default).
 
+![demo](demo.gif)
+
 ## Install
 
 ```sh
